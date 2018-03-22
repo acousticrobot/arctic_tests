@@ -7,6 +7,9 @@ export default class extends Phaser.State {
     this.stage.backgroundColor = '#EDEEC9'
     this.fontsReady = false
     this.fontsLoaded = this.fontsLoaded.bind(this)
+    this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL
+    this.scale.pageAlignHorizontally = true
+    this.scale.pageAlignVertically = true
   }
 
   preload() {

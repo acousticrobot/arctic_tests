@@ -2,7 +2,8 @@ import Phaser from 'phaser'
 import { centerGameObjects } from '../utils'
 
 export default class extends Phaser.State {
-  init () {}
+  init () {
+  }
 
   preload () {
     this.loaderBg = this.add.sprite(this.game.world.centerX, this.game.world.centerY, 'loaderBg')
@@ -10,9 +11,9 @@ export default class extends Phaser.State {
     centerGameObjects([this.loaderBg, this.loaderBar])
 
     this.load.setPreloadSprite(this.loaderBar)
-    //
-    // load your assets
-    //
+
+    this.load.image('ground', './assets/images/ground.png')
+    this.load.spritesheet('cub', './assets/images/wireframe_spritesheet.png', 64, 64)
   }
 
   create () {
