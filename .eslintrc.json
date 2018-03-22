@@ -1,6 +1,6 @@
 {
   "parser": "babel-eslint",
-  "extends": "standard",
+  "extends": "airbnb",
   "parserOptions": {
     "ecmaVersion": 6,
     "sourceType": "module"
@@ -9,7 +9,11 @@
     "browser": true
   },
   "rules": {
-    "import/no-unresolved": [2]
+    "import/no-unresolved": [2],
+    "semi": ["error", "never"],
+    "func-names": ["error", "as-needed"],
+    "no-unused-vars": ["error", { "varsIgnorePattern": "event" }],
+    "comma-dangle": ["error", "never"]
   },
   "globals": {
     "phaser": true
