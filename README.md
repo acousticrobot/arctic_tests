@@ -1,4 +1,4 @@
-# Farm Animals
+# Arctic Tests
 
 Built in Phaser using [phaser-es6-webpack](https://github.com/lean/phaser-es6-webpack.git)
 
