@@ -34,10 +34,13 @@ In the config file you can specify which webfonts you want to include. In case y
 
 ## Notes on building new projects with phaser-es6-webpack
 
+Just making a list of things I find myself doing with each new project:
+
   * `git clone https://github.com/lean/phaser-es6-webpack.git`
   * change the name of the directory and cd in
   * `git remote set-url origin git@github.com:[you/new-repo].git`
   * copy .eslintrc.json
   * copy this README
+  * change `test` to `lint` in package.json (unless you are adding tests to...)
   * `npm install`
 

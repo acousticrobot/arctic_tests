@@ -3,6 +3,11 @@ import { centerGameObjects } from '../utils'
 
 export default class extends Phaser.State {
   init () {
+    this.game.physics.startSystem(Phaser.Physics.ARCADE)
+    this.game.physics.arcade.gravity.y = 1000
+
+    this.game.world.setBounds(0, 0, 800, 300)
+    this.game.physics.arcade.checkCollision.down = false
   }
 
   preload () {
