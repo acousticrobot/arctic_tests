@@ -8,7 +8,8 @@
         "dev": "webpack",
         "deploy": "webpack --config webpack.production.config.js",
         "cordova": "webpack --config webpack.cordova.config.js",
-        "test": "eslint './src/**/*.js'"
+        "lintfix": "eslint './src/**/*.js' --fix",
+        "lint": "eslint './src/**/*.js'"
     },
     "license": "MIT",
     "devDependencies": {
@@ -23,6 +24,7 @@
         "copy-webpack-plugin": "^4.4.1",
         "cordova": "^8.0.0",
         "eslint": "^4.17.0",
+        "eslint-config-airbnb-standard": "^1.6.6",
         "eslint-config-standard": "^10.2.1",
         "eslint-plugin-import": "^2.8.0",
         "eslint-plugin-node": "^6.0.0",

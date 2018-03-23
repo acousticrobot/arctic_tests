@@ -39,8 +39,10 @@ Just making a list of things I find myself doing with each new project:
   * `git clone https://github.com/lean/phaser-es6-webpack.git`
   * change the name of the directory and cd in
   * `git remote set-url origin git@github.com:[you/new-repo].git`
-  * copy .eslintrc.json
-  * copy this README
-  * change `test` to `lint` in package.json (unless you are adding tests to...)
   * `npm install`
+  * `npm install --save-dev eslint-config-airbnb-standard`
+  * change `test` to `lint` in package.json
+  * copy over an existing `.eslintrc.json`
+  * copy this README and update
+
 

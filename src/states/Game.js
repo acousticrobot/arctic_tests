@@ -3,7 +3,7 @@ import Phaser from 'phaser'
 
 export default class extends Phaser.State {
   init() {
-    this.cursors = this.game.input.keyboard.createCursorKeys();
+    this.cursors = this.game.input.keyboard.createCursorKeys()
   }
 
   preload() { }
@@ -32,19 +32,17 @@ export default class extends Phaser.State {
   update() {
     this.game.physics.arcade.collide(this.cub, this.ground)
 
-    if(this.cursors.left.isDown) {
+    if (this.cursors.left.isDown) {
       this.cub.play('loping')
       this.cub.body.velocity.x = -100
       this.cub.scale.setTo(-1, 1)
-    }
-    else if(this.cursors.right.isDown) {
+    } else if (this.cursors.right.isDown) {
       this.cub.play('loping')
       this.cub.body.velocity.x = 100
       this.cub.scale.setTo(1, 1)
-    }
-    else {
+    } else {
       this.cub.play('standing')
-      let v = this.cub.body.velocity.x
+      const v = this.cub.body.velocity.x
       if (this.cub.body.velocity.x > 0) {
         this.cub.body.velocity.x = this.cub.body.velocity.x - 2
       }
